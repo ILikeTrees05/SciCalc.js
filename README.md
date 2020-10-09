@@ -4,4 +4,6 @@ a scientific calculator i am working on
 # Updates
 
 ## V1.0
-made the base calculator yet to style it
+-brand new gui
+-minor changes to script
+-yet to be stylized coming in v1.1
