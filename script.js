@@ -1,38 +1,35 @@
-let replace = {do:false,on:true}
-let ans = null
-function addItem(item) {
-    const disp = document.getElementById('disp')
-    if ((replace.do && replace.on) || disp.innerHTML == 0) {
-        document.getElementById('disp').innerHTML = item;
-        replace.do = false
+let replace = false
+let ans = 0
+function addChar(item) {
+    let disp = document.getElementById('disp')
+    if (disp.innerHTML === '0' || replace) {
+        disp.innerHTML = item
+        replace = false
     } else {
-        document.getElementById('disp').innerHTML += item;
-    }
-}
-
-function equals() {
-    let disp = document.getElementById('disp');
-    if (disp.innerHTML.includes('ans')) {
-        disp.innerHTML = disp.innerHTML.replace('ans', ans)
-    }
-    if (disp.innerHTML.includes('pi')) {
-        disp.innerHTML = disp.innerHTML.replace('pi', math.pi)
-    }
-    ans = math.evaluate(disp.innerHTML)
-    replace.do = true
-    document.getElementById('disp').innerHTML=ans
-    document.getElementById('prev').innerHTML=ans
-}
-
-function del() {
-    const disp = document.getElementById('disp').innerHTML;
-    if (disp.length===1) {
-        document.getElementById('disp').innerHTML = 0
-    } else {
-        document.getElementById('disp').innerHTML = disp.slice(0,-1)
+        disp.innerHTML += item
     }
 }
 
 function clearDisp() {
-    document.getElementById('disp').innerHTML = 0
+    document.getElementById('disp').innerHTML = '0'
+}
+
+function del() {
+    let disp = document.getElementById('disp')
+    if (disp.innerHTML.length === 1) {
+        disp.innerHTML = 0
+    } else {
+        disp.innerHTML = disp.innerHTML.slice(0,-1)
+    }
+}
+
+function equals() {
+    let disp = document.getElementById('disp')
+    if (disp.innerHTML.includes('ans')) {
+        disp.innerHTML = disp.innerHTML.replace('ans', ans)
+    }
+    ans = math.evaluate(disp.innerHTML)
+    document.getElementById('prev').innerHTML = 'ans = ' + ans
+    disp.innerHTML = ans
+    replace = true
 }
