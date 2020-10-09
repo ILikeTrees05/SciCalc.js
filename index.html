@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="bod">
+        <script src="https://cdn.jsdelivr.net/npm/mathjs@7.5.0/dist/math.min.js"></script>
+        <script src="input-func.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <div class="output">
+            <h3 id="prev">0</h3>
+            <h3 id="disp">0</h3>
+        </div>
+        <div class="input">
+            <button onclick="addItem('ans')" class="span2">ANS</button>
+            <button onclick="del()">DEL</button>
+            <button onclick="clearDisp()">AC</button>
+            <button onclick="addItem('1')" class="grey">1</button>
+            <button onclick="addItem('2')" class="grey">2</button>
+            <button onclick="addItem('3')" class="grey">3</button>
+            <button onclick="addItem('+')">+</button>
+            <button onclick="addItem('4')" class="grey">4</button>
+            <button onclick="addItem('5')" class="grey">5</button>
+            <button onclick="addItem('6')" class="grey">6</button>
+            <button onclick="addItem('-')">-</button>
+            <button onclick="addItem('7')" class="grey">7</button>
+            <button onclick="addItem('8')" class="grey">8</button>
+            <button onclick="addItem('9')" class="grey">9</button>
+            <button onclick="addItem('*')">&times;</button>
+            <button onclick="addItem('.')">.</button>
+            <button onclick="addItem('0')" class="grey span2">0</button>
+            <button onclick="addItem('/')">&divide;</button>
+            <button onclick="addItem('(')">(</button>
+            <button onclick="addItem(')')">)</button>
+            <button onclick="addItem('^')">^</button>
+            <button onclick="addItem('sqrt(')">sqrt</button>
+            <button onclick="addItem('pi')">&pi;</button>
+            <button onclick="addItem('!')">!</button>
+            <button onclick="addItem('sin(')">sin</button>
+            <button onclick="addItem('cos(')">cos</button>
+            <button onclick="addItem('tan(')">tan</button>
+            <button onclick="addItem('^2')">x^2</button>
+            <button onclick="equals()" class="span2">=</button>
+        </div>
+    </div>
+    </body>
+</html>
