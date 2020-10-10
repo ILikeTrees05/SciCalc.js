@@ -7,3 +7,4 @@ a scientific calculator i am working on
 -brand new gui
 -minor changes to script
 -yet to be stylized coming in v1.1
+a scientific calculator i am working on
