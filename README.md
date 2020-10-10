@@ -4,7 +4,6 @@ a scientific calculator i am working on
 # Updates
 
 ## V1.0
--brand new gui
--minor changes to script
+-brand new gui <br/>
+-minor changes to script <br/>
 -yet to be stylized coming in v1.1
-a scientific calculator i am working on
