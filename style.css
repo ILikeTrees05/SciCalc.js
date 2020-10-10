@@ -1,54 +1,9 @@
-* {
-    font-family: 'Noto Sans JP', sans-serif;
-}
-
 .input {
-    width: 400px;
     display: grid;
-    grid-template-columns: repeat(4, 100px); 
-    grid-template-rows: repeat(8, 100px);
-    grid-gap: 10px;
-    margin: auto;
-    align-content: center;
-}
-
-button {
-    border: none;
-    border-radius: 10px;
-    background-color: orange;
-}
-
-.grey {
-    background-color: lightgrey;
-}
-
-.grey:hover {
-    background-color: grey;
-}
-
-button:hover {
-    background-color: darkorange;
+    grid-template-columns: repeat(6, 50px);
+    grid-template-rows: repeat(5, 50px);
 }
 
 .span2 {
     grid-column: span 2;
-}
-
-.output {
-    display: grid;
-    grid-template-columns: 440px;
-    grid-template-rows: repeat(2, 50px);
-    width: 440px;
-    margin: auto;
-    float: right;
-    align-content: center;
-}
-
-.bod {
-    width: 480px;
-    margin: auto;
-}
-
-.disp {
-    overflow: auto;
 }
